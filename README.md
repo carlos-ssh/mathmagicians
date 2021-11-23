@@ -53,7 +53,7 @@ A Magic Number project with React JS
 - [CSS](https://www.w3schools.com/css/)
 - [JS](https://www.javascript.com/)
 
-## Authors
+## Author
 
 👤 **Carlos Flores**
 
