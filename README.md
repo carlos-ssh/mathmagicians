@@ -1,7 +1,7 @@
 <br />
 <p align="center">
 
-  <h3 align="center">Math React</h3>
+  <h3 align="center">🔮 MathMagicians</h3>
 
   <p align="center">
     Calculator with React
@@ -53,7 +53,7 @@ A Magic Number project with React JS
 - [CSS](https://www.w3schools.com/css/)
 - [JS](https://www.javascript.com/)
 
-## Authors
+## Author
 
 👤 **Carlos Flores**
 
