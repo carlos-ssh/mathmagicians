@@ -1,7 +1,7 @@
 <br />
 <p align="center">
 
-  <h3 align="center">Math React</h3>
+  <h3 align="center">🔮 MathMagicians</h3>
 
   <p align="center">
     Calculator with React
