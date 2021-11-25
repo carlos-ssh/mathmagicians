@@ -1,13 +1,20 @@
-import './App.css';
+import React from 'react';
+import { Container } from 'react-bootstrap';
 import Calculator from './components/Calculator';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <Calculator />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <Container>
+        <Calculator />
+      </Container>
+    );
+  }
 }
 
 export default App;

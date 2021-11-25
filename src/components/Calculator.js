@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Col, Row, Button } from 'react-bootstrap';
 
 class Calculator extends Component {
   constructor(props) {
@@ -8,83 +9,47 @@ class Calculator extends Component {
 
   render() {
     return (
-      <div className="calculator">
-        <div className="calculator-display">
-          <div className="calculator-display-value">0</div>
-        </div>
-        <div className="calculator-keypad">
-          <div className="calculator-keypad-row">
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">&#8592;</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">&#8594;</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">&#8593;</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">&#8595;</div>
-            </div>
-          </div>
-          <div className="calculator-keypad-row">
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">1</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">2</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">3</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">+</div>
-            </div>
-          </div>
-          <div className="calculator-keypad-row">
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">4</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">5</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">6</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">-</div>
-            </div>
-          </div>
-          <div className="calculator-keypad-row">
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">7</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">8</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">9</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">*</div>
-            </div>
-          </div>
-          <div className="calculator-keypad-row">
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">.</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">0</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">/</div>
-            </div>
-            <div className="calculator-keypad-key">
-              <div className="calculator-keypad-key-symbol">=</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <>
+        <Row className="row d-flex justify-content-center">
+          <Col xs={12} className="w-100">
+            <Button variant="btn btn-primary">AC</Button>
+            <Button>+/-</Button>
+            <Button>%</Button>
+            <Button>÷</Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} className="w-100">
+            <Button>7</Button>
+            <Button>8</Button>
+            <Button>9</Button>
+            <Button>x</Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} className="w-100">
+            <Button>4</Button>
+            <Button>5</Button>
+            <Button>6</Button>
+            <Button>-</Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} className="w-100">
+            <Button>1</Button>
+            <Button>2</Button>
+            <Button>3</Button>
+            <Button>+</Button>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} className="w-100">
+            <Button> 0 </Button>
+            <Button>.</Button>
+            <Button>=</Button>
+          </Col>
+        </Row>
+      </>
     );
   }
 }
