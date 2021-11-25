@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
+import './Calculator.css';
 
 class Calculator extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Calculator extends Component {
   render() {
     return (
       <>
-        <div>
+        <div className="container">
           <Row>
             <Col>
               <h1>Magic Calculator</h1>
@@ -18,8 +19,7 @@ class Calculator extends Component {
           </Row>
           <Row>
             <Col xs={12}>
-              <Button
-              >
+              <Button className="display">
                 0
               </Button>
             </Col>
@@ -27,98 +27,79 @@ class Calculator extends Component {
           <Row>
             <Col />
           </Row>
-          <Row>
-            <Col xs={12}>
-              <Button
-              >
+          <Row className="number-container">
+            <Col xs={12} className="number-container">
+              <Button className="button numkb">
                 AC
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 +/-
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 %
               </Button>
-              <Button
-              >
+              <Button className="button symbols">
                 ÷
               </Button>
             </Col>
           </Row>
           <Row>
-            <Col xs={12}>
-              <Button
-              >
+            <Col xs={12} className="number-container">
+              <Button className="button numkb">
                 7
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 8
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 9
               </Button>
-              <Button
-              >
+              <Button className="button symbols">
                 x
               </Button>
             </Col>
           </Row>
           <Row>
-            <Col xs={12} >
-              <Button
-              >
+            <Col xs={12} className="number-container">
+              <Button className="button numkb">
                 4
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 5
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 6
               </Button>
-              <Button
-              >
+              <Button className="button symbols">
                 -
               </Button>
             </Col>
           </Row>
           <Row>
-            <Col xs={12}>
-              <Button
-              >
+            <Col xs={12} className="number-container">
+              <Button className="button numkb">
                 1
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 2
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 3
               </Button>
-              <Button
-              >
+              <Button className="button symbols">
                 +
               </Button>
             </Col>
           </Row>
           <Row>
-            <Col xs={12}>
-              <Button
-              >
+            <Col xs={12} className="number-container">
+              <Button className="button btn-zero numkb">
                 0
               </Button>
-              <Button
-              >
+              <Button className="button numkb">
                 .
               </Button>
-              <Button
-              >
+              <Button className="button symbols">
                 =
               </Button>
             </Col>
