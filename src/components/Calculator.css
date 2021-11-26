@@ -48,7 +48,7 @@
 
 .symbols {
   background-color: rgb(253, 97, 35);
-  color: #fff;
+  color: rgb(211, 209, 209);
 }
 
 .numkb:hover {
@@ -60,11 +60,11 @@
 }
 
 .numkb:active, numkb:active:focus {
-  background-color: #aaaaaa;
+  box-shadow: 0 0 20px #a8a8a8 inset;
   color: #000;
 }
 
 .symbols:active, symbols:active:focus {
-  background-color: rgb(180, 51, 0);
-  color: white;
+  box-shadow: 0 0 30px rgba(119, 34, 1, 0.7) inset;
+  color: rgba(255,255,255,1);
 }
