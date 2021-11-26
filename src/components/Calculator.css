@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: row;
   border: 0;
+  gap: 0;
 }
 
 .button {
@@ -31,6 +32,9 @@
   align-items: center;
   width: 100%;
   border-radius: 0;
+  color: gray;
+  border: 1px solid gray;
+  font-weight: bold;
 }
 
 .btn-zero {
@@ -44,4 +48,23 @@
 
 .symbols {
   background-color: rgb(253, 97, 35);
+  color: #fff;
+}
+
+.numkb:hover {
+  background-color: #f7f7f7;
+}
+
+.symbols:hover {
+  background-color: rgb(251, 73, 2);
+}
+
+.numkb:active, numkb:active:focus {
+  background-color: #aaaaaa;
+  color: #000;
+}
+
+.symbols:active, symbols:active:focus {
+  background-color: rgb(180, 51, 0);
+  color: white;
 }

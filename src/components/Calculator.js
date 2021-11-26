@@ -1,12 +1,43 @@
 import React, { Component } from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
 import './Calculator.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faDivide,
+  faTimes,
+  faMinus,
+  faPlus,
+  faEquals,
+  faPercentage,
+} from '@fortawesome/free-solid-svg-icons';
+// import calculate from '../logic/calculate';
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      // total: null,
+      // next: '',
+      // result: '0',
+      // operation: null,
+    };
   }
+
+  // handleClick = (e) => {
+  //   // const { result, total, operation } = this.state;
+
+  //   const obj = {
+  //     total,
+  //     next,
+  //     operation,
+  //   };
+
+  //   // const result = calculate(obj, btnName);
+  //   // this.setState({
+  //     // result: this.displayResult(result),
+
+  //   // });
+  // }
 
   render() {
     return (
@@ -36,10 +67,10 @@ class Calculator extends Component {
                 +/-
               </Button>
               <Button className="button numkb">
-                %
+                <FontAwesomeIcon icon={faPercentage} />
               </Button>
               <Button className="button symbols">
-                ÷
+                <FontAwesomeIcon icon={faDivide} />
               </Button>
             </Col>
           </Row>
@@ -55,7 +86,7 @@ class Calculator extends Component {
                 9
               </Button>
               <Button className="button symbols">
-                x
+                <FontAwesomeIcon icon={faTimes} />
               </Button>
             </Col>
           </Row>
@@ -71,7 +102,7 @@ class Calculator extends Component {
                 6
               </Button>
               <Button className="button symbols">
-                -
+                <FontAwesomeIcon icon={faMinus} />
               </Button>
             </Col>
           </Row>
@@ -87,7 +118,7 @@ class Calculator extends Component {
                 3
               </Button>
               <Button className="button symbols">
-                +
+                <FontAwesomeIcon icon={faPlus} />
               </Button>
             </Col>
           </Row>
@@ -100,7 +131,7 @@ class Calculator extends Component {
                 .
               </Button>
               <Button className="button symbols">
-                =
+                <FontAwesomeIcon icon={faEquals} />
               </Button>
             </Col>
           </Row>
