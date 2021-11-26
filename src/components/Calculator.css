@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: row;
   border: 0;
+  gap: 0;
 }
 
 .button {
@@ -31,6 +32,9 @@
   align-items: center;
   width: 100%;
   border-radius: 0;
+  color: gray;
+  border: 1px solid gray;
+  font-weight: bold;
 }
 
 .btn-zero {
@@ -44,4 +48,25 @@
 
 .symbols {
   background-color: rgb(253, 97, 35);
+  color: rgb(211, 209, 209);
+}
+
+.numkb:hover {
+  background-color: #f7f7f7;
+}
+
+.symbols:hover {
+  background-color: rgb(251, 73, 2);
+}
+
+.numkb:active,
+.numkb:active:focus {
+  box-shadow: 0 0 20px #a8a8a8 inset;
+  color: #000;
+}
+
+.symbols:active,
+.symbols:active:focus {
+  box-shadow: 0 0 30px rgba(119, 34, 1, 0.7) inset;
+  color: rgba(255, 255, 255, 1);
 }
