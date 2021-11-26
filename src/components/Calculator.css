@@ -59,12 +59,14 @@
   background-color: rgb(251, 73, 2);
 }
 
-.numkb:active, numkb:active:focus {
+.numkb:active,
+.numkb:active:focus {
   box-shadow: 0 0 20px #a8a8a8 inset;
   color: #000;
 }
 
-.symbols:active, symbols:active:focus {
+.symbols:active,
+.symbols:active:focus {
   box-shadow: 0 0 30px rgba(119, 34, 1, 0.7) inset;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
 }

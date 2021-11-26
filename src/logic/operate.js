@@ -4,23 +4,39 @@ export default function operate(numberOne, numberTwo, operation) {
   const one = Big(numberOne);
   const two = Big(numberTwo);
   if (operation === '+') {
-    return one.plus(two).toString();
+    try {
+      return one.plus(two).toString();
+    } catch (err) {
+      return '0';
+    }
   }
   if (operation === '-') {
-    return one.minus(two).toString();
+    try {
+      return one.minus(two).toString();
+    } catch (err) {
+      return '0';
+    }
   }
   if (operation === 'x') {
-    return one.times(two).toString();
+    try {
+      return one.times(two).toString();
+    } catch (err) {
+      return '0';
+    }
   }
   if (operation === '÷') {
     try {
       return one.div(two).toString();
     } catch (err) {
-      return "Can't divide by 0.";
+      return '0';
     }
   }
   if (operation === '%') {
-    return one.mod(two).toString();
+    try {
+      return one.mod(two).toString();
+    } catch (err) {
+      return '0';
+    }
   }
   throw Error(`Unknown operation '${operation}'`);
 }
