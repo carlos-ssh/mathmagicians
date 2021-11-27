@@ -214,3 +214,5 @@ const RenderButtons = () => {
     </>
   );
 };
+
+export default RenderButtons;
