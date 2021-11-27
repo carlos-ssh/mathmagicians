@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { Col, Row, Button } from 'react-bootstrap';
 import './Calculator.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,18 +12,17 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import calculate from '../logic/calculate';
 
-class RenderButtons extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: '',
-      result: '0',
-      operation: null,
-    };
-  }
+const RenderButtons = () => {
+  const { calcState, setCalcState } = useState({
+    total: null,
+    next: '',
+    result: '0',
+    operation: null,
+  });
 
-  displayResult = (result) => {
+  const { result } = calcState;
+
+  const displayResult = (result) => {
     if (result.next) {
       return result.next;
     }
@@ -33,28 +32,34 @@ class RenderButtons extends Component {
     return '0';
   };
 
-  buttonPress = (btnName) => {
-    const { next, total, operation } = this.state;
+  const buttonPress = (btnName) => {
+    const { next, total, operation } = calcState;
 
     const obj = {
       total,
       next,
       operation,
     };
-
-    const result = calculate(obj, btnName);
-    this.setState({
-      result: this.displayResult(result),
-      next: result.next,
-      total: result.total,
-      operation: result.operation,
-    });
+    try {
+      const resultCalculate = calculate(obj, btnName);
+      setCalcState({
+        result: displayResult(resultCalculate),
+        next: resultCalculate.next,
+        total: resultCalculate.total,
+        operation: resultCalculate.operation,
+      });
+    } catch {
+      setCalcState({
+        result: 'Error',
+        next: '',
+        total: null,
+        operation: null,
+      });
+    }
   };
 
-  render() {
-    const { result } = this.state;
-
-    return (
+  return (
+    <>
       <div className="container">
         <Row>
           <Col>
@@ -64,7 +69,7 @@ class RenderButtons extends Component {
         <Row>
           <Col xs={12}>
             <Button className="display">
-              { result }
+              {result}
             </Button>
           </Col>
         </Row>
@@ -75,25 +80,25 @@ class RenderButtons extends Component {
           <Col xs={12} className="number-container">
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('AC')}
+              onClick={() => buttonPress('AC')}
             >
               AC
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('+/-')}
+              onClick={() => buttonPress('+/-')}
             >
               +/-
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('%')}
+              onClick={() => buttonPress('%')}
             >
               <FontAwesomeIcon icon={faPercentage} />
             </Button>
             <Button
               className="button symbols"
-              onClick={() => this.buttonPress('÷')}
+              onClick={() => buttonPress('÷')}
             >
               <FontAwesomeIcon icon={faDivide} />
             </Button>
@@ -103,25 +108,25 @@ class RenderButtons extends Component {
           <Col xs={12} className="number-container">
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('7')}
+              onClick={() => buttonPress('7')}
             >
               7
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('8')}
+              onClick={() => buttonPress('8')}
             >
               8
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('9')}
+              onClick={() => buttonPress('9')}
             >
               9
             </Button>
             <Button
               className="button symbols"
-              onClick={() => this.buttonPress('x')}
+              onClick={() => buttonPress('x')}
             >
               <FontAwesomeIcon icon={faTimes} />
             </Button>
@@ -131,25 +136,25 @@ class RenderButtons extends Component {
           <Col xs={12} className="number-container">
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('4')}
+              onClick={() => buttonPress('4')}
             >
               4
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('5')}
+              onClick={() => buttonPress('5')}
             >
               5
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('6')}
+              onClick={() => buttonPress('6')}
             >
               6
             </Button>
             <Button
               className="button symbols"
-              onClick={() => this.buttonPress('-')}
+              onClick={() => buttonPress('-')}
             >
               <FontAwesomeIcon icon={faMinus} />
             </Button>
@@ -159,25 +164,25 @@ class RenderButtons extends Component {
           <Col xs={12} className="number-container">
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('1')}
+              onClick={() => buttonPress('1')}
             >
               1
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('2')}
+              onClick={() => buttonPress('2')}
             >
               2
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('3')}
+              onClick={() => buttonPress('3')}
             >
               3
             </Button>
             <Button
               className="button symbols"
-              onClick={() => this.buttonPress('+')}
+              onClick={() => buttonPress('+')}
             >
               <FontAwesomeIcon icon={faPlus} />
             </Button>
@@ -187,27 +192,27 @@ class RenderButtons extends Component {
           <Col xs={12} className="number-container">
             <Button
               className="button btn-zero numkb"
-              onClick={() => this.buttonPress('0')}
+              onClick={() => buttonPress('0')}
             >
               0
             </Button>
             <Button
               className="button numkb"
-              onClick={() => this.buttonPress('.')}
+              onClick={() => buttonPress('.')}
             >
               .
             </Button>
             <Button
               className="button symbols"
-              onClick={() => this.buttonPress('=')}
+              onClick={() => buttonPress('=')}
             >
               <FontAwesomeIcon icon={faEquals} />
             </Button>
           </Col>
         </Row>
       </div>
-    );
-  }
-}
+    </>
+  );
+};
 
 export default RenderButtons;
