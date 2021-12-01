@@ -1,12 +1,23 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import './App.css';
 import Calculator from './components/Calculator';
+import NavBar from './components/Nav';
+import HomePage from './components/HomePage';
+import './App.css';
 
-const App = () => (
-  <Container>
-    <Calculator />
-  </Container>
-);
+function App() {
+  return (
+    <>
+      <NavBar />
+      <Container>
+        <Routes>
+          <Route path="/HomePage" element={<HomePage />} />
+          <Route path="/Calculator" element={<Calculator />} />
+        </Routes>
+      </Container>
+    </>
+  );
+}
 
 export default App;

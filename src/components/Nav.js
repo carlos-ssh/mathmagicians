@@ -1,20 +1,25 @@
 import React from 'react';
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import './Calculator.css';
 
 const NavBar = () => (
-  <Navbar bg="light" expand="lg">
-    <Container>
-      <Navbar.Brand href="#home">🔮 Math MathMagicians</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#calculator">Calculator</Nav.Link>
-          <Nav.Link href="#contact">Contact us</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
+  <>
+    <header>
+      <nav className="navbar" href="#home">
+        <a className="navbar-brand" href="#a">🔮 Math Magicians</a>
+        <ul className="nav-ul">
+          <li className="nav-li">
+            <a className="nav-li" href="#a">Home</a>
+          </li>
+          <li className="nav-li">
+            <a className="nav-li" href="#b">Calculator</a>
+          </li>
+          <li className="nav-li">
+            <a className="nav-li" href="#Myself">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </>
 );
 
 export default NavBar;
