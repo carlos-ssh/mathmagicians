@@ -4,13 +4,10 @@ function Myself() {
   return (
     <>
       <div>
-        <h1>Myself</h1>
+        <h1>Dear Math Lovers</h1>
         <p>
-          I am a software engineer with a passion for building products that
-          solve problems.
-          I am currently working at as a software engineer.
-          I am a graduate of the University of California, Berkeley with a
-          concentration in Computer Science.
+          Mathematics is not about numbers, equiations, computations or algorithms;
+          it is about understanding - William Paul Thurston.
         </p>
       </div>
     </>

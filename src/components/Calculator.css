@@ -108,3 +108,41 @@
   box-shadow: 0 0 30px rgba(119, 34, 1, 0.7) inset;
   color: rgba(255, 255, 255, 1);
 }
+
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+
+  .navbar-brand {
+    background-color: rgb(251, 73, 2);
+    color: #fff;
+    font-size: 1.5em;
+    padding: 30px;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+ /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+ /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
