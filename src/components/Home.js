@@ -4,7 +4,7 @@ import './Calculator.css';
 const Home = () => (
   <>
     <div className="home-page">
-      <h1 className="main-title">Welcome to MathMagicians</h1>
+      <h1>Welcome to MathMagicians</h1>
       <p className="p0">
         Lorem ipsum dolor sit amet,
         consectetur adip iscing elit, sed do eiusmod tempor
