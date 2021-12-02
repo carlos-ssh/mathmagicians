@@ -5,6 +5,11 @@ const Home = () => (
   <>
     <div className="home-page">
       <h1 className="main-title">Welcome to MathMagicians</h1>
+      <p className="p0">
+        Lorem ipsum dolor sit amet,
+        consectetur adip iscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+      </p>
       <p className="p1">
         Lorem ipsum dolor sit amet,
         consectetur adip iscing elit, sed do eiusmod tempor
