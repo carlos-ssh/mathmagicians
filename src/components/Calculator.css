@@ -74,10 +74,7 @@
   font-weight: bold;
 }
 
-.btn-zero {
-  padding-right: 368px;
-  padding-left: 62px;
-}
+
 
 .numkb {
   background-color: #ccc;
@@ -112,7 +109,7 @@
  /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
-    width: 100%;
+    width: 100vw;
   }
 
   .navbar-brand {
@@ -125,24 +122,71 @@
     text-decoration: none;
   }
 
+  .a-ham {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    top: 25px;
+    left: 325px;
+  }
+
+  .nav-li {
+    display: none;
+  }
+
+  .home-page {
+    padding-top: 25px;
+  }
+
+  .main-title {
+    font-size: 2em;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+  }
+
+  .p1 {
+    text-align: left;
+  }
+
+  .p2 {
+    text-align: right;
+  }
+
+  .btn-zero {
+    padding: 0 75px 0 30px;
+  }
+
 }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+  .btn-zero {
+    padding-right: 368px;
+    padding-left: 62px;
+  }
 }
 
  /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+  .btn-zero {
+    padding-right: 368px;
+    padding-left: 62px;
+  }
 }
 
  /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  .btn-zero {
+    padding-right: 368px;
+    padding-left: 62px;
+  }
 }
 
  /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+  .btn-zero {
+    padding-right: 368px;
+    padding-left: 62px;
+  }
 }

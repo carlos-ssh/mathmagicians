@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { TiThMenu } from 'react-icons/ti';
 import './Calculator.css';
 
 const NavBar = () => (
@@ -19,7 +18,11 @@ const NavBar = () => (
             <a className="nav-li" href="/Myself">Contact me</a>
           </li>
         </ul>
-        <FontAwesomeIcon icon={faBars} />
+        <div>
+          <a className="a-ham" href="/">
+            <TiThMenu />
+          </a>
+        </div>
       </nav>
     </header>
   </>

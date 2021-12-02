@@ -1,10 +1,11 @@
 import React from 'react';
+import './Calculator.css';
 
 const Home = () => (
   <>
     <div className="home-page">
-      <h1>Welcome to Math MathMagicians</h1>
-      <p>
+      <h1 className="main-title">Welcome to MathMagicians</h1>
+      <p className="p1">
         Lorem ipsum dolor sit amet,
         consectetur adip iscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -14,8 +15,7 @@ const Home = () => (
         sint occaecat cupidatat non proident, sunt in culpa qui officia
         deserunt mollit anim id est laborum.
       </p>
-      <br />
-      <p>
+      <p className="p2">
         Lorem ipsum dolor sit amet,
         consectetur adip iscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
