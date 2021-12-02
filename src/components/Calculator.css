@@ -22,8 +22,6 @@
   gap: 0;
 }
 
-
-
 .numkb {
   background-color: #ccc;
 }
@@ -54,7 +52,7 @@
   color: rgba(255, 255, 255, 1);
 }
 
- /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
     width: 100vw;
@@ -120,10 +118,9 @@
     border: 0;
     gap: 0;
   }
-
 }
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   body {
     width: 100vw;
@@ -149,15 +146,6 @@
 
   .nav-li {
     padding: 32px 5px;
-  }
-
-  .a-ham {
-    display: none;
-  }
-
-  .btn-zero {
-    padding-right: 368px;
-    padding-left: 62px;
   }
 
   .container {
@@ -188,18 +176,22 @@
   .btn-zero {
     padding: 0 150px 0 10px;
   }
-
 }
 
- /* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .nav-li {
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0.8em 0.6em;
-}
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.8em 0.6em;
+  }
+
+  .a-ham {
+    display: none;
+  }
+
   .navbar-brand {
     background-color: rgb(251, 73, 2);
     color: #000;
@@ -216,17 +208,17 @@
     padding: 0;
     overflow: hidden;
     display: flex;
-    flex-direction: flex-end;
+    justify-content: flex-end;
   }
 
   .navbar {
-  background-color: #292929;
-  overflow: hidden;
-  border-radius: 3px;
-  width: 100%;
-  min-height: 65px;
-  display: flex;
-  flex-direction: row;
+    background-color: #292929;
+    overflow: hidden;
+    border-radius: 3px;
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
   }
 
   .button {
@@ -250,15 +242,16 @@
   }
 }
 
- /* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .nav-li {
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0.8em 0.6em;
-}
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.8em 0.6em;
+  }
+
   .navbar-brand {
     background-color: rgb(251, 73, 2);
     color: #000;
@@ -269,23 +262,26 @@
     text-decoration: none;
   }
 
+  .a-ham {
+    display: none;
+  }
+
   .nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     display: flex;
-    flex-direction: flex-end;  
   }
 
   .navbar {
-  background-color: #292929;
-  overflow: hidden;
-  border-radius: 3px;
-  width: 100%;
-  min-height: 65px;
-  display: flex;
-  flex-direction: row;
+    background-color: #292929;
+    overflow: hidden;
+    border-radius: 3px;
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
   }
 
   .button {
@@ -309,15 +305,16 @@
   }
 }
 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .nav-li {
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0.8em 0.6em;
-}
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.8em 0.6em;
+  }
+
   .navbar-brand {
     background-color: rgb(251, 73, 2);
     color: #000;
@@ -328,23 +325,26 @@
     text-decoration: none;
   }
 
+  .a-ham {
+    display: none;
+  }
+
   .nav-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     display: flex;
-    flex-direction: flex-end;
   }
 
   .navbar {
-  background-color: #292929;
-  overflow: hidden;
-  border-radius: 3px;
-  width: 100%;
-  min-height: 65px;
-  display: flex;
-  flex-direction: row;
+    background-color: #292929;
+    overflow: hidden;
+    border-radius: 3px;
+    width: 100%;
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
   }
 
   .button {
@@ -361,7 +361,7 @@
     border: 1px solid gray;
     font-weight: bold;
   }
-  
+
   .btn-zero {
     padding-right: 368px;
     padding-left: 62px;
