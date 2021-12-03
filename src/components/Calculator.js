@@ -64,7 +64,7 @@ const Calculator = () => {
         <div className="container-txt">
           <Row>
             <Col>
-              <h1>Let&apos;s do some Math!</h1>
+              <h1>Lets do some Math!</h1>
             </Col>
           </Row>
         </div>
