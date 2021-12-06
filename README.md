@@ -14,6 +14,8 @@
     <a href="https://github.com/carlos-ssh/mathmagicians/issues">Report Bug</a>
     ·
     <a href="https://github.com/carlos-ssh/mathmagicians/issues">Request Feature</a>
+    <a href="https://pure-spire-50602.herokuapp.com/">Heroku Demo</a>
+    <a href="#">Netlify Demo</a>
   </p>
 </p>
 
